@@ -1,0 +1,105 @@
+/* The side navigation menu */
+.sidennaav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111827; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /* padding-top: 70px; Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidennaav */
+  }
+  .admnHeader{
+      height: 70px;
+    background-color: #111827;
+  }
+  .admnHeaderr{
+      height: 70px;
+    background-color: #111827;
+  }
+  .admnHeader p{
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+     padding-top: 15px;
+  }
+  .admnHeaderr p{
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+     padding-top: 15px;
+  }
+  .buttoncColor{
+    color: white;
+    margin: 15px;
+    background: transparent;
+    border: none;
+    position: absolute;
+  }
+  .buttoncColor img{
+    width: 50px;   
+  }
+  /* The navigation menu links */
+  .sidennaav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  #myN{
+      width: 250px;
+  }
+  #myNN{
+      width: 250px;
+  }
+  .s{
+    border-radius: 15px;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidennaav a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidennaav .closeebttn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  .ta{
+    font-size: 3.5rem;
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+    margin-left: 250px;
+  }
+  
+  #mainn {
+    transition: margin-left .5s;
+    padding: 20px;
+    margin-left: 250px;
+  }
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidennaav (less padding and a smaller font size) */
+  
+  .text-mmd{
+    font-size: 20px;
+  }
+  @media only screen and (max-width:688px){
+    #main{
+      margin-left: 0px;
+    }
+  }
