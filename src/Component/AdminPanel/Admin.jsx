@@ -31,18 +31,44 @@ const Admin = () => {
                 <div className='admnHeader d-block d-md-none'>
                     <p id='para'>Admin Panel</p>
                 </div>
-                <div id='myNN' className='sidennaav mt-5 d-none d-md-block'>
+                <div id='myNN' className='sidennaav h-100 mt-5 d-none d-md-block'>
                     <NavLink to='/home' className='mb-5 border-bottom mt-1 border-light'>
                         {/* <img width='120px' src={companyLogo} alt='' /> */}
                     </NavLink>
                     <NavLink
+                        to='allCarousel'
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "black" : "",
+                                backgroundColor: isActive ? "white" : "",
+                                borderRadius: isActive ? "10px" : ''
+                            };
+                        }}
+                    >
+                        <span>All Carousel img</span>
+                    </NavLink>
+                    <NavLink
                         to='carousel'
-                        activeClassName=' bg-light text-dark mx-2 s'>
-                        <span>Carousel</span>
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "black" : "",
+                                backgroundColor: isActive ? "white" : "",
+                                borderRadius: isActive ? "10px" : ''
+                            };
+                        }}
+                    >
+                        <span>Carousel img</span>
                     </NavLink>
                     <NavLink
                         to='userInfo'
-                        activeClassName='bg-light text-dark mx-2 s'>
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "black" : "",
+                                backgroundColor: isActive ? "white" : "",
+                                borderRadius: isActive ? "10px" : ''
+                            };
+                        }}
+                    >
                         <span>User Info</span>
                     </NavLink>
                     <div className='pt-5'></div>
@@ -55,9 +81,9 @@ const Admin = () => {
                     </div>
                 </div>
                 <div id='myN' className='sidennaav  d-none d-md-none'>
-                    <div className='mt-4'></div>
+                    <div className='mt-5'></div>
                     <NavLink to='/home' className='mb-5 border-bottom border-light'>
-                        <img width='120px' src='{companyLogo}' alt='' />
+                        {/* <img width='120px' src='{companyLogo}' alt='' /> */}
                     </NavLink>
                     <a
                         href='javascript:void(0)'
@@ -66,15 +92,41 @@ const Admin = () => {
                         &times;
                     </a>
                     <NavLink
-                        to=''
+                        to='allCarousel'
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "black" : "",
+                                backgroundColor: isActive ? "white" : "",
+                                borderRadius: isActive ? "10px" : ''
+                            };
+                        }}
                         onClick={closeNav}
-                        activeClassName=' bg-light text-dark mx-2 s'>
-                        <span>Carousel</span>
+                    >
+                        <span>All Carousel img</span>
                     </NavLink>
                     <NavLink
-                        to=''
+                        to='carousel'
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "black" : "",
+                                backgroundColor: isActive ? "white" : "",
+                                borderRadius: isActive ? "10px" : ''
+                            };
+                        }}
                         onClick={closeNav}
-                        activeClassName='bg-light text-dark mx-2 s'>
+                    >
+                        <span>Carousel img</span>
+                    </NavLink>
+                    <NavLink
+                        to='userInfo'
+                        onClick={closeNav}
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "black" : "",
+                                backgroundColor: isActive ? "white" : "",
+                                borderRadius: isActive ? "10px" : ''
+                            };
+                        }}>
                         <span>User Info</span>
                     </NavLink>
                     <div className='pt-5'></div>
